@@ -24,6 +24,8 @@ class ProductsController < ApplicationController
 
   def show
     @product = Product.find(params[:id])
+    respond_to do |r|
+    end
   end
 
   def data
